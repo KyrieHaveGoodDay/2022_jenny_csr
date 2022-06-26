@@ -1,0 +1,47 @@
+$main_border:1px solid #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f2e3bb;
+}
+img{
+    max-width: 100%;
+}
+// 桌基手機顯示
+.pc{
+
+    @media screen and(max-width:768px){
+        display: none;
+    }
+}
+.mb{
+    display: none;
+    @media screen and(max-width:768px){
+        display: block;
+    }
+}
+// 範圍
+.Main_Size{
+    width: 1320px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.lesson1{
+    border:$main_border;
+    .lesson1_content{
+        height: 600px;
+        background-image: url(./img/lesson1/lesson1_bg.png);
+        background-repeat: no-repeat;
+        margin: 35px 112px 0 184px;
+        text-align: center;
+        .lesson1_title{
+            transform: translateY(-30px);
+            
+        }
+    }
+}
