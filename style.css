@@ -51,4 +51,40 @@ img {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
+
+.lesson1 .lesson1_content .lesson1_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lesson1 .lesson1_content .lesson1_data .swiper_arrow {
+  border: 1px solid #000;
+  width: 40%;
+  position: relative;
+}
+
+.lesson1 .lesson1_content .lesson1_data .swiper_arrow .lesson1_btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_left {
+  left: 0;
+}
+
+.lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_right {
+  right: 0;
+}
+
+.lesson1 .lesson1_content .lesson1_data .lesson1_text {
+  border: 1px solid #000;
+  width: 60%;
+}
+
+@-webkit-keyframes identifier {}
+
+@keyframes identifier {}
 /*# sourceMappingURL=style.css.map */

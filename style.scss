@@ -43,5 +43,40 @@ img{
             transform: translateY(-30px);
             
         }
+        // lessone內容
+        .lesson1_data{
+            display: flex;
+            // 左邊swiper
+            .swiper_arrow{
+                border: $main_border;
+                width: 40%;
+                position: relative;
+                // 共同設定的class
+                .lesson1_btn{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                // 按鈕左邊
+                .lessone1_left{
+                    left: 0;
+                }
+                // 按鈕右邊
+                .lessone1_right{
+                    right: 0;
+                }
+            }
+            // 右邊文案
+            .lesson1_text{
+                border: $main_border;
+                width: 60%;
+
+            }
+        }
     }
+}
+
+
+@keyframes identifier {
+    
 }

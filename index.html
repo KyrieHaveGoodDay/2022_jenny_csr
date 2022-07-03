@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>貓狗CSR</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!-- 切版的模式 -->
-   
+
     <div class="main">
         <!-- 主視覺 -->
         <img class="pc" src="./img/main_view.jpg" alt="">
@@ -19,21 +22,62 @@
             <!-- 標題 -->
             <div class="lesson1_content">
                 <img class="lesson1_title" src="./img/lesson1/lesson1_title.png" alt="">
+
+
+                <!-- 內容 -->
+                <div class="lesson1_data">
+                    <div class="swiper_arrow">
+
+                        <!-- dog_swiper = 啟動的名字 -->
+                        <div class="lesson1_swiper swiper dog_swiper">
+                            <div class="swiper-wrapper">
+                                <!-- 輪播的內容 -->
+                                <div class="swiper-slide">
+                                    <img src="img/lesson1/slide1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/lesson1/slide2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/lesson1/slide3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 箭頭 -->
+                        <img class="lessone1_left lesson1_btn" src="img/lesson1/lesson1_left.png" alt="">
+                        <img class="lessone1_right lesson1_btn" src="img/lesson1/lesson1_right.png" alt="">
+
+                    </div>
+
+
+
+                    <div class="lesson1_text">
+                        <!-- br = 斷行 -->
+                        <p>
+                            支持領養代替購買！<br>
+                            玩IG濾鏡，體驗浪浪試養日常<br>
+                            超可愛狗狗貓貓近在眼前<br>
+                            標記<img src="img/lesson1/lesson1_text.png" alt=""><br>
+                            將愛分享出去！<br>
+                        </p>
+                    </div>
+
+                </div>
+
+
             </div>
-            <!-- 內容 -->
-            <div class="lesson1_data">
-                <div class="lesson1_swiper"></div>
-                <div class="lesson1_text"></div>
-            </div>
+
+
         </div>
         <!-- lesson2 -->
         <div class="Main_Size lesson2"></div>
 
     </div>
-   
 
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="all.js"></script>
 </body>
+
 </html>
