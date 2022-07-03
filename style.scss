@@ -49,34 +49,57 @@ img{
             // 左邊swiper
             .swiper_arrow{
                 border: $main_border;
-                width: 40%;
+                width: 50%;
                 position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .lesson1_swiper{
+                    cursor: pointer;
+                }
+                   
+                
                 // 共同設定的class
                 .lesson1_btn{
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    cursor: pointer;
+                    // z-index使用時機，必須有: position: relative 或是 position: absolute;
+                    position: relative;
+                    z-index: 10;
                 }
                 // 按鈕左邊
                 .lessone1_left{
-                    left: 0;
+                   transform: translateX(65px);
+                   @media screen and(max-width:1200px) {
+                   transform: translateX(0);
+                    
+                   }
                 }
                 // 按鈕右邊
                 .lessone1_right{
-                    right: 0;
+                    transform: translateX(-67px);
+                    @media screen and(max-width:1200px) {
+                        transform: translateX(0);
+                         
+                        }
                 }
             }
             // 右邊文案
             .lesson1_text{
                 border: $main_border;
-                width: 60%;
-
+                width: 50%;
+                line-height: 40px;
+                position: relative;
+                p{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                // icon dog
+                .lesson1_dog{
+                    position: absolute;
+                    bottom: -2%;
+                    right: -20%;
+                }
             }
         }
     }
-}
-
-
-@keyframes identifier {
-    
 }

@@ -60,31 +60,68 @@ img {
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow {
   border: 1px solid #000;
-  width: 40%;
+  width: 50%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lesson1 .lesson1_content .lesson1_data .swiper_arrow .lesson1_swiper {
+  cursor: pointer;
 }
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lesson1_btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_left {
-  left: 0;
+  -webkit-transform: translateX(65px);
+          transform: translateX(65px);
+}
+
+@media screen and (max-width: 1200px) {
+  .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_right {
-  right: 0;
+  -webkit-transform: translateX(-67px);
+          transform: translateX(-67px);
+}
+
+@media screen and (max-width: 1200px) {
+  .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lessone1_right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_data .lesson1_text {
   border: 1px solid #000;
-  width: 60%;
+  width: 50%;
+  line-height: 40px;
+  position: relative;
 }
 
-@-webkit-keyframes identifier {}
+.lesson1 .lesson1_content .lesson1_data .lesson1_text p {
+  font-size: 24px;
+  font-weight: 600;
+}
 
-@keyframes identifier {}
+.lesson1 .lesson1_content .lesson1_data .lesson1_text .lesson1_dog {
+  position: absolute;
+  bottom: -2%;
+  right: -20%;
+}
 /*# sourceMappingURL=style.css.map */
