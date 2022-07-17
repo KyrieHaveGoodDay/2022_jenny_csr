@@ -1,103 +1,140 @@
-$main_border:1px solid #000;
+$main_border: 1px solid #000;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     background: #f2e3bb;
+    // transition: all 0.5s;
 }
-img{
+img {
     max-width: 100%;
 }
 // 桌基手機顯示
-.pc{
-
-    @media screen and(max-width:768px){
+.pc {
+    @media screen and(max-width:768px) {
         display: none;
     }
 }
-.mb{
+.mb {
     display: none;
-    @media screen and(max-width:768px){
+    @media screen and(max-width:768px) {
         display: block;
     }
 }
 // 範圍
-.Main_Size{
+.Main_Size {
     width: 1320px;
     max-width: 100%;
     margin: 0 auto;
-    
 }
-.lesson1{
-    border:$main_border;
-    .lesson1_content{
-        height: 600px;
+.lesson1 {
+    border: $main_border;
+    .lesson1_content {
         background-image: url(./img/lesson1/lesson1_bg.png);
         background-repeat: no-repeat;
+        // 背景被切掉 但是，從左右邊被切掉
+        background-position: top center;
+        // background-size: 100% 100%;
         margin: 35px 112px 0 184px;
+        padding-bottom: 50px;
         text-align: center;
-        .lesson1_title{
+        @media screen and(max-width:1200px) {
+            margin: 3vw 8vw 0 13vw;
+            padding-bottom: 4vw;
+        }
+        @media screen and(max-width:768px) {
+            background-image: url(./img/lesson1/lesson1_bg_mb.png);
+            background-size: 100% 100%;
+            margin: 0;
+            margin-top: 5vw;
+            padding: 0;
+        }
+        @media screen and(max-width:414px) {
+            padding-bottom: 4vw;
+        }
+        .lesson1_title {
             transform: translateY(-30px);
-            
+            @media screen and(max-width:768px) {
+                width: 60%;
+                transform: translateY(-3vw);
+            }
         }
         // lessone內容
-        .lesson1_data{
+        .lesson1_data {
             display: flex;
+            @media screen and(max-width:768px) {
+                flex-direction: column;
+                padding: 0 5vw;
+            }
             // 左邊swiper
-            .swiper_arrow{
+            .swiper_arrow {
                 border: $main_border;
                 width: 50%;
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .lesson1_swiper{
+                @media screen and(max-width:768px) {
+                    order: 2;
+                    width: 100%;
+                }
+                .lesson1_swiper {
                     cursor: pointer;
                 }
-                   
-                
+
                 // 共同設定的class
-                .lesson1_btn{
+                .lesson1_btn {
                     cursor: pointer;
                     // z-index使用時機，必須有: position: relative 或是 position: absolute;
                     position: relative;
                     z-index: 10;
                 }
                 // 按鈕左邊
-                .lessone1_left{
-                   transform: translateX(65px);
-                   @media screen and(max-width:1200px) {
-                   transform: translateX(0);
-                    
-                   }
+                .lessone1_left {
+                    transform: translateX(65px);
+                    @media screen and(max-width:1200px) {
+                        transform: translateX(0);
+                    }
                 }
                 // 按鈕右邊
-                .lessone1_right{
+                .lessone1_right {
                     transform: translateX(-67px);
                     @media screen and(max-width:1200px) {
                         transform: translateX(0);
-                         
-                        }
+                    }
                 }
             }
             // 右邊文案
-            .lesson1_text{
+            .lesson1_text {
                 border: $main_border;
                 width: 50%;
                 line-height: 40px;
                 position: relative;
-                p{
+                @media screen and(max-width:768px) {
+                    order: 1;
+                    width: 100%;
+                }
+                p {
                     font-size: 24px;
                     font-weight: 600;
+                    @media screen and(max-width:440px) {
+                        font-size: 20px;
+                    }
+                    img {
+                        @media screen and(max-width:440px) {
+                            width: 70%;
+                        }
+                    }
                 }
                 // icon dog
-                .lesson1_dog{
+                .lesson1_dog {
                     position: absolute;
                     bottom: -2%;
                     right: -20%;
+                    width: 43%;
                 }
             }
         }

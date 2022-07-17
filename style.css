@@ -40,11 +40,35 @@ img {
 }
 
 .lesson1 .lesson1_content {
-  height: 600px;
   background-image: url(./img/lesson1/lesson1_bg.png);
   background-repeat: no-repeat;
+  background-position: top center;
   margin: 35px 112px 0 184px;
+  padding-bottom: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .lesson1 .lesson1_content {
+    margin: 3vw 8vw 0 13vw;
+    padding-bottom: 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lesson1 .lesson1_content {
+    background-image: url(./img/lesson1/lesson1_bg_mb.png);
+    background-size: 100% 100%;
+    margin: 0;
+    margin-top: 5vw;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .lesson1 .lesson1_content {
+    padding-bottom: 4vw;
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_title {
@@ -52,10 +76,28 @@ img {
           transform: translateY(-30px);
 }
 
+@media screen and (max-width: 768px) {
+  .lesson1 .lesson1_content .lesson1_title {
+    width: 60%;
+    -webkit-transform: translateY(-3vw);
+            transform: translateY(-3vw);
+  }
+}
+
 .lesson1 .lesson1_content .lesson1_data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .lesson1 .lesson1_content .lesson1_data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 5vw;
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow {
@@ -71,6 +113,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .lesson1 .lesson1_content .lesson1_data .swiper_arrow {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_data .swiper_arrow .lesson1_swiper {
@@ -114,14 +165,36 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .lesson1 .lesson1_content .lesson1_data .lesson1_text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+}
+
 .lesson1 .lesson1_content .lesson1_data .lesson1_text p {
   font-size: 24px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 440px) {
+  .lesson1 .lesson1_content .lesson1_data .lesson1_text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .lesson1 .lesson1_content .lesson1_data .lesson1_text p img {
+    width: 70%;
+  }
 }
 
 .lesson1 .lesson1_content .lesson1_data .lesson1_text .lesson1_dog {
   position: absolute;
   bottom: -2%;
   right: -20%;
+  width: 43%;
 }
 /*# sourceMappingURL=style.css.map */
