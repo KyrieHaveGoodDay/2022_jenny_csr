@@ -140,3 +140,100 @@ img {
         }
     }
 }
+
+.lesson2 {
+    background-image: url(./img/lesson2/lesson2_bg.png);
+    background-position: top center;
+    // height: 750px;
+    position: relative;
+    @media screen and(max-width:768px) {
+        background-image: url(./img/lesson2/lesson2_bg_mb.png);
+        background-repeat: no-repeat;
+        margin-top: 5vw;
+        background-size: 100% 100%;
+    }
+    // cat
+    .lesson2_cat {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+    }
+    .lesson2_title {
+        position: absolute;
+        right: 150px;
+        top: -30px;
+        width: 33%;
+        @media screen and(max-width:768px) {
+            position: static;
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-4vw);
+        }
+    }
+    .lesson2_content {
+        display: flex;
+        margin: 0 130px 0 220px;
+        padding: 50px 0;
+        border: $main_border;
+        gap: 20px;
+        @media screen and(max-width:1320px) {
+            margin: 0 10vw 0 15vw;
+        }
+        @media screen and(max-width:768px) {
+            margin: 0;
+            padding: 0 3vw;
+            flex-direction: column;
+        }
+        .lessone_fb {
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            @media screen and(max-width:768px) {
+                width: 100%;
+                order:3;
+            }
+            img {
+                width: 100%;
+
+                // height: 100%;
+            }
+            .fb_mid {
+                overflow: hidden;
+                margin-top: -4px;
+                // padding: 0 10px;
+                background-image: url(./img/lesson2/fb_mid.png);
+                background-size: 100%;
+                text-align: center;
+                .fb-post {
+                    width: 95%;
+                   
+                }
+            }
+        }
+        .lessone_data {
+            width: 60%;
+            text-align: center;
+            font-size: 24px;
+            line-height: 50px;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media screen and(max-width:768px) {
+                width: 100%;
+                order:1;
+                line-height: 7vw;
+                font-size: 3vw;
+                // font-weight: 400;
+            }
+            
+            .lesson2_logo{
+                @media screen and(max-width:768px) {
+                    width: 34%;
+                }
+            }
+        }
+    }
+}
